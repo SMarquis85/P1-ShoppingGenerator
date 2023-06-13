@@ -1,4 +1,6 @@
 var findNearestMalls;
+var key = "AIzaSyCLsgBkf2kPSWIYMK0fU7VFxf1p-5Rexi8";
+
 button.addEventListener("findNearestMalls", getSearch())
 
 //get user search input

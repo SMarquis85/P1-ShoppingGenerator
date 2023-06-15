@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Shopping Malls Locator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mall Locator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Shopping Malls Locator</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Mall Locator</a>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Ottawa Malls</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Bayshore Shopping Centre</li>
+          <li class="list-group-item">Rideau Centre</li>
+          <li class="list-group-item">St. Laurent Centre</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Barrie Malls</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Georgian Mall</li>
+          <li class="list-group-item">Park Place</li>
+          <li class="list-group-item">Bayfield Mall</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2>Map</h2>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
 
   <label for="location">Enter your location:</label>
   <input type="text" id="location" placeholder="Enter your location">
@@ -29,6 +70,7 @@
     crossorigin="anonymous"></script>
 
   <!--Link to JS file-->
+
   <script src="script.js"></script>
 </body>
 </html>

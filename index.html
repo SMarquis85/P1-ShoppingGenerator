@@ -2,60 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mall Locator</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  <style>
-    #map {
-      height: 400px;
-      width: 100%;
-    }
-  </style>
+  <title>Shopping Center Locator</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLsgBkf2kPSWIYMK0fU7VFxf1p-5Rexi8&callback=initMap" async defer></script>
+  <script src="https://kit.fontawesome.com/ebdc235bd6.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img\fevicon.png" type="image/x-icon" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Mall Locator</a>
-  </nav>
-
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Ottawa Malls</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Bayshore Shopping Centre</li>
-          <li class="list-group-item">Rideau Centre</li>
-          <li class="list-group-item">St. Laurent Centre</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h2>Barrie Malls</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Georgian Mall</li>
-          <li class="list-group-item">Park Place</li>
-          <li class="list-group-item">Bayfield Mall</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-md-12">
-        <h2>Map</h2>
-        <div id="map"></div>
-      </div>
+  <div class="title">Shopping Center Locator</div>
+  <div class="search-container">
+    <div class="search">
+      <input id="zipcode-input" type="text" placeholder="Enter Postal Code" />
+      <i class="fas fa-search" onclick="searchStores()"></i>
     </div>
   </div>
 
-
-  <label for="location">Enter your location:</label>
-  <input type="text" id="location" placeholder="Enter your location">
-  <button id="findNearestMalls">Find Nearest Malls</button>
-
-  <div id="results">
-    <div id="wikiExtract"></div>
+  <div class="stores-list-container">
+    <div class="stores-list">
+      <div class="stores-container">
+        <div class="store-info-container">
+          <div class="store-address">
+            <span>Bayshore Shopping Center</span>
+            <span>Address: 100 Bayshore Dr., Ottawa ON K2B 8C1</span>
+          </div>
+          <div class="store-phone-number">Tel: 613-829-7491</div>
+        </div>
+        <div class="store-number-container">
+          <div class="store-number">1</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--Bootstrap Implementation-->
@@ -69,8 +46,18 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-  <!--Link to JS file-->
+  <!--Google Maps API Implementation for Bootstrap-->
+  <script>
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+      key: "AIzaSyCLsgBkf2kPSWIYMK0fU7VFxf1p-5Rexi8",
+      v: "1",
+    });
+  </script>
 
-  <script src="script.js"></script>
+  <div id="map"></div>
+  <script src="js/api-key.js"></script>
+  <script src="js/store-data.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

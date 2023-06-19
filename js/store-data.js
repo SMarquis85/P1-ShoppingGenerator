@@ -182,4 +182,4 @@ const createMarker = (
 // Call initMap when the Google Maps API is loaded
 window.onload = () => {
   initMap();
-
+}

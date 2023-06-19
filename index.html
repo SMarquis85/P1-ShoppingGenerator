@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style/style.css" />
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLsgBkf2kPSWIYMK0fU7VFxf1p-5Rexi8&callback=initMap" async defer></script>
   <script src="https://kit.fontawesome.com/ebdc235bd6.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="img\fevicon.png" type="image/x-icon" />
+  <script src="https://api.newscatcherapi.com/v2/latest_headlines?key=tuuHNzvbzwgB_7h4NTMx-TeyCUcyHbgfVcOtc7CnitM&format=json"></script>
 </head>
 
 <body>
@@ -33,6 +33,10 @@
         </div>
       </div>
     </div>
+    <button id="news-button" onclick="fetchNews()">Local News</button>
+    <div id="news-container">
+      <ul id="newsList"></ul>
+    </div>
   </div>
 
   <!--Bootstrap Implementation-->
@@ -55,7 +59,6 @@
   </script>
 
   <div id="map"></div>
-  <script src="js/api-key.js"></script>
   <script src="js/store-data.js"></script>
   <script src="js/index.js"></script>
 </body>

@@ -61,6 +61,7 @@ body {
   background-color: white;
   border-radius: 10px;
   bottom: 20px;
+  padding-bottom: -200px;
   padding-bottom: -10px;
   display: flex;
   overflow-y: hidden;
@@ -70,6 +71,7 @@ body {
   flex-grow: 1;
   overflow-y: scroll;
   padding: 0 20px;
+  margin-right: -40px
 }
 .stores-container {
   display: flex;
@@ -150,4 +152,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+}
+#news-button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }

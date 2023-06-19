@@ -46,4 +46,4 @@ The following animation demonstrates the application functionality:
 
 ![images/P1-ShoppingMallsGenerator2.png](images/P1-ShoppingMallsGenerator2.png)
 
-The assignment can be viewed here: [P1-ShoppingMallsGenerator]()
+The assignment can be viewed here: [P1-ShoppingMallsGenerator]( https://smarquis85.github.io/P1-ShoppingMallsGenerator/)

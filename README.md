@@ -40,10 +40,10 @@ The following animation demonstrates the application functionality:
 
 ### How the front-end application looks now:
 
-![images\P1-ShoppingMallsGenerator.png](images\P1-ShoppingMallsGenerator.png)
+![images/P1-ShoppingMallsGenerator.png](images/P1-ShoppingMallsGenerator.png)
 
 ### How the front-end application would look like once completed and a search is successful:
 
-![images\P1-ShoppingMallsGenerator2.png](images\P1-ShoppingMallsGenerator2.png)
+![images/P1-ShoppingMallsGenerator2.png](images/P1-ShoppingMallsGenerator2.png)
 
-The assignment can be viewed here: [C6-WeatherApp](https://smarquis85.github.io/C6-WeatherApp/)
+The assignment can be viewed here: [P1-ShoppingMallsGenerator]()

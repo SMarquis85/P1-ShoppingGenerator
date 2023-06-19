@@ -34,7 +34,7 @@ To create a real-world front-end application that you’ll be able to showcase t
 > **(CARL-VIRT-FSF-PT-04-2023, Project 1 / README.md 2023)**
 > **(JAVASCRIPT & JQUERRY, Jon Duckett, Wiley; First edition (June 30 2014) pages 14-292. )**
 
-The following animation demonstrates the application functionality:
+### The following images demonstrates the application functionality:
 
 > **(Our group was not able to solve the newscatcher API issue. Only the GoogleMaps API is functioning. Still not functioning properly but we have an idea on what the application would look like once completed. )**
 
